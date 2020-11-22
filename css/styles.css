@@ -7,7 +7,7 @@
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
-    min-height: 400px;;
+    min-height: 400px;
 }
 
 .footer{
@@ -37,3 +37,13 @@ body{
 .navbar-dark {
     background-color: #512DAB;
 }
+
+
+/*@media(max-width:570px){
+    .fa{
+        display: inline-block;
+        width: 25px;
+        text-align: center;
+    }
+}
+*/
