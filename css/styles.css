@@ -71,3 +71,10 @@ body{
         padding: 0;
     }
 }
+
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
