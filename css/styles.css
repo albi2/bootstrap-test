@@ -38,12 +38,22 @@ body{
     background-color: #512DAB;
 }
 
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
 
-/*@media(max-width:570px){
+.fa{
+    padding: 5px;
+}
+
+@media(max-width:570px){
     .fa{
         display: inline-block;
         width: 25px;
         text-align: center;
+        padding: 0;
     }
 }
-*/
