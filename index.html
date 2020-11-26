@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="modalLogBtn">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -79,7 +79,7 @@
         <div class="modal-dialog modal-lg" role="content">
            <div class="modal-content">
                <div class="modal-header">
-                   <h3 class="modal-title text-dark">Reserve A Table</h3>
+                   <h3 class="modal-title">Reserve A Table</h3>
                    <button type="button" data-dismiss="modal" class="close" aria-label="Close">
                        <span aria-hidden="true">&times;</span>
                    </button>
@@ -151,9 +151,9 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a href="#reserveCard"
+                    <a href="#reserveCard" id="reserveModalBtn"
                     class="btn btn-block btn-warning nav-link"
-                     style="font-weight: 600;" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                     style="font-weight: 600;">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -203,7 +203,6 @@
                     <button class="btn btn-danger btn-sm" id="carouselButton">
                         <span class="fa fa-pause"></span>
                     </button>
-
               </div>
             </div>
         </div>
@@ -317,6 +316,14 @@
                 $('#myCarousel').carousel('cycle');
                 $('#carouselButton').children('span').removeClass('fa-play').addClass('fa-pause');
             }
+         });
+
+         $('#modalLogBtn').click(function(){
+            $('#loginModal').modal('show');
+         });
+
+         $('#reserveModalBtn').click(function(){
+            $('#reserveModal').modal('show');
          });
      })
  </script>
